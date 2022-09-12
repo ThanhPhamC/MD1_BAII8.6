@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h1>Kiểm tra chuỗi giống nhau</h1>
+  <h2>Nhập chuỗi 1 :</h2><input type="text" id="chuoi1" value=""><br>
+  <h2>Nhập chuỗi 2 :</h2><input type="text" id="chuoi2" value=""><br><br>
+<button onclick="kiemTRa()" >Kiểm tra</button>
+<h2 id="ketQua">Kết quả</h2>
+<script >
+  function kiemTRa() {
+    let str =document.getElementById('chuoi1').value.trim().split("");
+    let str2 =document.getElementById('chuoi2').value.trim().split("");
+      if (str.join("").toLowerCase()===str2.join("").toLowerCase()){
+        document.getElementById('ketQua').innerHTML= "Kết quả : 2 chuỗi giống nhau "
+      }else{
+        document.getElementById('ketQua').innerHTML= "Kết quả : 2 chuỗi khác nhau "
+      }
+  }
+
+
+</script>
+</body>
+</html>

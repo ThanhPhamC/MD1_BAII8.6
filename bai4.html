@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="ketQua"></p>
+<script>
+  let str =prompt("Nhập chuỗi bất kì");
+  //let str =prompt("Nhap vao").trim().split("")
+  let arr = str.split(" ");
+  let arrDem=[];
+  let trang="";
+  let kq;
+  for (let i=0; i<arr.length; i++){
+    if (arr[i]!==trang){
+      arrDem.push(arr[i])
+      kq=arrDem.length
+      console.log(arrDem)
+      console.log(kq)
+    }document.getElementById('ketQua').innerHTML="Chuỗi vừa nhập có " +kq+" từ"
+  }
+
+</script>
+</body>
+</html>
